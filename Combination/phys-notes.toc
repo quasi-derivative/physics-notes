@@ -1,0 +1,28 @@
+\contentsline {chapter}{\numberline {1}Practical Skills}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Foundations of Physics}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Forces and Motion}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Motion}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definitions}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Graphs of motion}{7}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Constant Acceleration Equations}{7}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Projectile Motion}{8}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Forces}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The Newton}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Center of Mass}{10}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Electrons, Waves, and Photons}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Charge and Current}{13}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Charge}{13}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Electron Drift Velocity}{13}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Energy, Power, and Resistance}{14}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Potential Difference and Electromotive Force}{14}{subsection.4.2.1}%
+\contentsline {subsubsection}{Definitions of P.D and E.M.F}{14}{section*.2}%
+\contentsline {subsubsection}{The Electron Gun and the Electron Volt}{14}{section*.3}%
+\contentsline {subsection}{\numberline {4.2.2}Resistance and Ohm's Law}{15}{subsection.4.2.2}%
+\contentsline {subsubsection}{Defining Resistance}{15}{section*.4}%
+\contentsline {subsubsection}{I-V Characteristic of Components}{15}{section*.5}%
+\contentsline {subsection}{\numberline {4.2.3}Resistivity}{16}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Power}{16}{subsection.4.2.4}%
+\contentsline {subsubsection}{Power Fundamentals}{16}{section*.6}%
+\contentsline {subsubsection}{The Kilowatt-hour}{17}{section*.7}%

@@ -1,0 +1,74 @@
+\documentclass[11pt]{report}
+\usepackage{geometry}        
+\geometry{a4paper}    
+\usepackage[parfill]{parskip}  
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{siunitx}
+\usepackage{tikz, pgfplots}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, 
+            citecolor=blue, urlcolor=blue]{hyperref}
+
+%\includeonly{Chapter1}
+
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{exercise}{Exercise}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{warning}{Warning}
+
+\newcommand{\harpoon}{\overset{\rightharpoonup}}
+
+\def\grad{ \mbox{grad}}
+\def\curl{ \mbox{curl}}
+\def\div{ \mbox{div}}
+\def\U{\ensuremath {\cal U}}
+\def\S{\ensuremath {\cal S}}
+\def\V{\ensuremath {\cal V}}
+\def\R{\ensuremath {\cal R}}
+\def\tr{\ensuremath {\mbox{tr}}}
+
+\pagenumbering{arabic}
+
+
+
+% ------------------- Title and Author -----------------------------
+\title{Physics Notes}
+\author{Author}
+\begin{document}
+
+
+\maketitle
+
+\tableofcontents
+
+\chapter[Practical Skills]{Development of Practical Skills in Physics}
+\include{chapter-1}
+
+\chapter[Foundations of Physics]{Foundations of Physics}
+\include{chapter-2}
+
+\chapter[Forces and Motion]{Forces and Motion}
+\include{chapter-3}
+
+\chapter[Electrons, Waves, and Photons]{Electrons, Waves, and Photons}
+\include{chapter-4}
+
+\include{chapter-5}
+
+
+\bibliographystyle{plain-annote}
+\bibliography{mybibliography}
+
+
+\end{document}
+\end
+

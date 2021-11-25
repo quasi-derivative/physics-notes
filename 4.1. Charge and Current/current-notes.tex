@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=1.2in]{geometry}
+\usepackage{amssymb, amsthm}
+\usepackage{siunitx}
+
+\title{4.1 Electricity: Charge and Current – Notes}
+\author{Éloi Thibault}
+
+\begin{document}
+
+\theoremstyle{definition}
+\newtheorem{define}{Definition}[section]
+
+\maketitle
+
+\section{Charge}
+
+Charge is a fundamental property of certain particles. Some particles (protons) have positive charge, some (electrons) have negative charge. Charge is quantized, so the charge of any particle or atom is an integer multiple of the elementary charge, $e = 1.6\times10^{-19}\si{\coulomb}$.
+
+An electric current consists of a flow of charged particles. Electric current is the rate of flow of charge:
+\[I=\frac{\Delta Q}{\Delta t}\]
+Charge $Q$ is measured in coulombs, and time $t$ is measured in seconds. Current $I$ is measured in amperes.
+
+\begin{define}
+	Kirchhoff's First Law: Since charge is always conserved, the sum of the charges flowing into a circuit junction is equal to the sum of the charges leaving it. Stated mathematically: $\sum{I_{in}} = \sum{I_{out}}$. Or, as vector quantities, $\sum{I_{in}} + \sum{I_{out}} = 0$.
+\end{define}
+
+\begin{define}
+	The elementary charge $e$ is the charge of a single electron.
+\end{define}
+
+Since the coulomb is defined as the quantity of charge that passes a fixed point in one second, we can find the amount of electrons in a single coulomb ($\frac{1}{e}$), or by extension the amount of electrons passing a point in a fixed amount of time. 
+
+\section{Electron Drift Velocity}
+
+Metals, at an atomic level, are structured as a crystalline lattice. Atoms are bonded together and spaced out at regular intervals. Around them are delocalised electrons that are free to move in the lattice. These are also called conduction electrons. The more conducting electrons a metal has, the more conducive it is. Electrons always move randomly.
+
+When no potential difference is applied to a metal, there is no current. This means electrons move randomly with no net motion. When a potential difference is applied to a metal, a current flows. Electrons move randomly and slowly; however, there is a net motion from - to +. This net motion is the drift velocity being superimposed on the random velocities of the electrons.
+
+\begin{define}
+	Calculation of electron drift velocity. Current can be calculated as charge over time. By considering the dimensions of the wire we can arrive at an equation for current:
+	\[I=nAev\]
+\end{define}
+$I$ is the current, $n$ is the number density of electrons, $A$ is the cross-sectional area of the wire, $e$ is the elementary charge, and $v$ is the drift velocity of electrons. The charge available is the amount of electrons ($nAL$, where $L$ is the length of the wire) multiplied by the charge of each electron $e$. The time for the charge to travel the length $L$ is $\frac{L}{v}$. So, by using the charge equation for current, we arrive at $I=nAev$.
+
+Metals have a high number density of electrons (around $\times 10^28$), and so are good conductors. Semi conductors have less (around $\times 10^10$), and so are less conductive. Insulators have close to zero conducting electrons, so do not conduct.
+
+\end{document}

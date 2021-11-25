@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=1.2in]{geometry}
+\usepackage{amssymb, amsthm}
+\usepackage{siunitx}
+\usepackage{tikz, pgfplots}
+
+\title{4.2. Electricity: Charge and Current – Notes}
+\author{Éloi Thibault}
+
+\begin{document}
+
+\theoremstyle{definition}
+\newtheorem{define}{Definition}[section]
+
+\maketitle
+
+\section{Potential Difference and Electromotive Force}
+
+\subsection{Definitions of P.D and E.M.F}
+In order for electric current to flow in a circuit, there must be a source of energy.
+
+\begin{define}
+	Electromotive Force (e.m.f) is the potential difference across the power supply. It is a measure of the external energy (usually chemical) that is being transferred to the electrical energy of the circuit.
+\end{define}
+
+\begin{define}
+	The potential difference (p.d) across each component describes how much energy per unit charge is being transferred at each component.
+\end{define}
+
+We can think of e.m.f as describing input energy, and p.d as describing output energy. Both can be measured in joules per coulomb ($\si{\joule\per\coulomb}$) or in $\si{\volt}$. E.m.f is energy transferred per unit charge, while p.d. is work done per unit charge.\\
+Equation for e.m.f:
+\[\varepsilon = \frac{W}{Q}\]
+where $W$ is energy transferred (in Joules) and $Q$ is charge (in Coulombs).\\
+
+Equation for p.d:
+\[V = \frac{W}{Q}\]
+where $W$ is work done and $Q$ is charge.
+
+\subsection{The Electron Gun and the Electron Volt}
+
+An electron has charge $e$, so it undergoes an energy change of $eV$ as it passes a p.d $V$. When a potential difference is applied a conductor, electrons are accelerated and gain kinetic energy. When this p.d. is $V$, the kinetic energy gained can be expressed as:
+\[eV=\frac{1}{2}m_{e}v^2\]
+where $m_e$ is the mass of an electron.
+
+\section{Resistance and Ohm's Law}
+
+\subsection{Defining Resistance}
+\begin{define}
+	Ohm's Law: The current through a conductor is directly proportional to the potential difference across it, provided that physical conditions remain constant.
+\end{define}
+
+Resistance is defined as the opposition to current. It is described by:
+\[R = \frac{V}{I}\]
+and has the units Ohm ($\si{\ohm}$). An ohmic conductor (wire, resistor) is one that follows Ohm's Law. It's I-V graph should be a straight line. To determine the resistance from an I-V graph, find the reciprocal of its gradient.
+
+The resistance of a wire is directly proportional to the length and inversely proportional to the cross sectional area.
+
+\subsection{I-V Characteristic of Components}
+
+The I-V characteristics of various components can be experimentally investigated using a circuit with a power supply, ammeter, variable resistor, and component in series. A voltmeter should also be wired around the component. The variable resistor can be used to vary current, and an I-V graph can be plotted.\\
+
+Wire and conductor: At a constant temperature, these follow Ohm's law. They behave the same way regardless of the direction of current, so their I-V graphs are a straight line.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[axis x line=center, axis y line=center, domain=-5:5, xticklabels={}, yticklabels={},
+					 xlabel={Potential Difference $V$}, ylabel={Current $I$}, 
+					 xlabel style={below}, ylabel style={above left},]
+					 
+    		\addplot [mark=none, domain=-3:3] {x};
+    	\end{axis}
+	\end{tikzpicture}
+	\caption{I-V characteristic of a wire}
+\end{figure}
+
+Filament Lamp: As the current increases, electrons speed up. This leads to a higher rate of more energetic collisions between electrons and the metal structure. The collisions cause the metal ions to have a higher vibrational kinetic energy, reducing the number of electrons that can pass, increasing resistance, and increasing temperature. This leads to more collisions and so on and so on.
+\newpage
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.8]
+		\begin{axis}[axis x line=center, axis y line=center, domain=-5:5, xticklabels={}, yticklabels={},
+					 xlabel={Potential Difference $V$}, ylabel={Current $I$}, 
+					 xlabel style={below}, ylabel style={above left},]
+					 
+    		\addplot [mark=none, domain=-3:3] {1/(1+e^(-1.3*x))-0.5}; 
+    	\end{axis}
+	\end{tikzpicture}
+	\caption{I-V characteristic of a filament bulb}
+\end{figure}
+
+Diode or LED: These depend on the polarity of the battery, since they let current flow only one way. In the forward bias direction, they follow ohm's law, while in the reverse bias they have an almost infinite resistance.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.5]
+		\begin{axis}[axis x line=center, axis y line=center, domain=-5:5, xticklabels={}, yticklabels={},
+					 xlabel={Potential Difference $V$}, ylabel={Current $I$}, 
+					 xlabel style={below}, ylabel style={above left},]
+					 
+			\addplot [mark=none, domain=-3:0.3] {0}; 
+    		\addplot [mark=none, domain=0.3:3] {x-0.3}; 
+    	\end{axis}
+	\end{tikzpicture}
+	\caption{I-V characteristic of a diode}
+\end{figure}
+
+Thermistor and LDR: These respond to external conditions and have an inverse relationship:
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.5]
+		\begin{axis}[axis x line=center, axis y line=center, domain=0:5, xticklabels={}, yticklabels={},
+					 xlabel={Temprature/Light Intensity}, ylabel={Resistance}, 
+					 xlabel style={below}, ylabel style={above left},]
+					 
+    		\addplot [mark=none, domain=0:5] {1/x}; 
+    	\end{axis}
+	\end{tikzpicture}
+	\caption{Characteristic of a thermistor/LDR}
+\end{figure}
+
+\section{Resistivity}
+
+The resistance of a material depends on its physical conditions and dimensions.
+
+\begin{define}
+	Resistivity is an intrinsic property of a material, irrespective of its physical shape. It is given in units Ohm meters ($\si{\ohm\meter}$) and calculated using the equation:
+	\[\rho = \frac{RA}{l}\]
+\end{define}
+
+\section{Power}
+
+\subsection{Power Fundamentals}
+
+\begin{define}
+	Power is the rate at which energy is transferred from one form to another. The unit of power is the watt, ($\si{\watt}$). $1\si{\watt}=\frac{1\si{\joule}}{1\si{s}}$.
+\end{define}
+
+By combining the above definition of power with the definition of the Volt and Ohm's law, we arrive at the three equations for power:
+\[P=IV\]
+\[P=I^2R\]
+\[P=\frac{V^2}{R}\]
+Recall a previous equation for power, $P=\frac{E}{t}$. With this, we can relate energy, time, and the electrical attributes of the circuit.
+
+\subsection{The Kilowatt-hour}
+
+The kilowatt-hour ($\si{\kilo\watt\hour}$) is a unit of energy. It is used, rather than Joules, to describe everyday electricity usage. $1\si{\kilo\watt\hour}$ is equal to $\num{3.6e6}\si{\joule}$. It is defined using the equation $E=Pt$. Electricity cost is given in terms of kilowatt-hours; to calculate the cost $C$ of running an appliance using $P\si{\watt}$ for $n$ hours with a cost of $c$ pence per kilowatt-hour, we say:
+\[C=Pnc\]
+
+
+\end{document}
